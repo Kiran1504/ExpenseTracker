@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+      <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/node_modules/popup-alert/app.css" />
+    <script src="/node_modules/popup-alert/index.js"></script>
+</head>
+<body>
+    <!-- <h1 id="header-title">Money Manager</h1>
+    <header class="header" id="header"> -->
+        <div class="grid" id="gridtr">
+            <h1 id="main-title">Money Manager</h1>  
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="/">Records</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/budgets">Budgets</a>
+            <a href="/register">Signup</a>
+            <a href="/login">Login</a>
+        </nav>
+    </header>
+<div class="flex-column" id="flex-column">
+    <div class="details" id="details">
+
+        <div class="income-expense" id="income-expense">
+            <h3 class="income" id="income-toggle" onclick="income_mode()">Income</h3> <h3>|</h3>
+            <h3 class="income highlighted" id="expense-toggle" onclick="expense_mode()">Expense</h3>
+        </div>
+
+
+        <div class="inputs" id="inputs">
+            <ul class="dropdown" id="dropdown" onclick="drop()"><h3 id="Drop-head">Categories</h3>
+                <div class="dropcontent" id="dropcontent">
+                    <li class="options" onclick="changecategory(1)">Grocery</li>
+                    <li class="options" onclick="changecategory(2)">Medical</li>
+                    <li class="options" onclick="changecategory(3)">Stationary</li>
+                    <li class="options" onclick="changecategory(4)">Petrol</li>
+                    <li class="options" onclick="changecategory(5)">Rent</li>
+                    <li class="options" onclick="changecategory(6)">Miscelleneous</li>
+                </div>
+
+            </ul>
+        </div>
+        <div class="amt">
+            <h3 id="amt_title">Enter the amount</h3>
+            <form action="/" method="post">
+                <input type="text" id="cat" name="category" style="display: none;">
+                <input type="number" id="amount" name="amount">
+            <button type="submit" class="save" id="save" onclick="checkin_or_out()"> Save </button></form>
+        </div>
+    </div>
+    <div id="storage-table">
+        <div>
+        <a id="records"><h2>Records</h2></a></div>
+        <div class="recordtable"><table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Button</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table></div>
+        <button type="reset" class="clear" id="clear" onclick="clearing()">Clear</button>
+    </div>
+    </div>
+    <div class="accbalance" id="accbalance">
+        <h3>5000</h3>
+    </div>
+    <div class="finalbalance" id="finalbalance">
+        <h3>5000</h3>
+    </div>
+
+    <script src="home_script.js"></script>
+</body>
+</html>

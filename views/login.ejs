@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budget Tracker</title>
+        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+          <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+        <link rel="stylesheet" href="common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="grid" id="gridtr">
+        <h1 id="main-title">Money Manager</h1>  
+    </div>
+    
+    <nav class="navbar" id="navbar">
+        <a href="/" class=" navtabs">Records</a>
+        <a href="/analysis" class="navtabs">Analysis</a>
+        <a href="/budgets" class="navtabs">Budgets</a>
+        <a href="/register" class="navtabs">Signup</a>
+        <a href="/login" class="acnav">Login</a>
+    </nav>
+</header>
+<div id="storage-table">
+<h1 class="lo">Login</h1> 
+<section>
+
+          <div class="container">
+  
+            <form class="form" action="\login" method="POST" > 
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label>Email address: </label>
+                <input type="email" class="form-control" name="email" required />
+              </div>
+  
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <label>Password: </label>
+                <input type="password" class="form-control" name="password" />
+              </div>
+              
+  
+              <!-- Submit button -->
+              <button type="submit" class="save">Sign in</button>
+              <p>Don't have an account? <a href="/register">Signup/Register</a></p>
+            </form>
+          </div>
+          </div>
+
+    
+  </section>
+</div>
+  </body></html>

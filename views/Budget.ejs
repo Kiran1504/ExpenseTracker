@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="budgetscript.js"></script>
+</head>
+<body>
+
+    <div class="grid" id="gridtr">
+        <h1 id="main-title">Money Manager</h1>  
+    </div>
+    <nav class="navbar" id="navbar">
+        <a href="/" class=" navtabs">Records</a>
+        <a href="/analysis" class="navtabs">Analysis</a>
+        <a href="/budgets" class="acnav">Budgets</a>
+        <a href="/register" class="navtabs">Signup</a>
+        <a href="/login" class="navtabs">Login</a>
+    </nav>
+        <div class="details" id="details"> 
+        <div class="inputs" id="inputs">
+            <ul class="dropdown" id="dropdown" onclick="drop()"><h3 id="Drop-head">Categories</h3>
+                <div class="dropcontent" id="dropcontent">
+                    <li class="options" onclick="changecategory(1)">Grocery</li>
+                    <li class="options" onclick="changecategory(2)">Medical</li>
+                    <li class="options" onclick="changecategory(3)">Stationary</li>
+                    <li class="options" onclick="changecategory(4)">Petrol</li>
+                    <li class="options" onclick="changecategory(5)">Rent</li>
+                    <li class="options" onclick="changecategory(6)">Miscelleneous</li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="amt">
+            <h3 id="amt_title">Enter the amount</h3>
+                <form action="/budgets/" method="post">
+                <input type="text" id="cat" name="Bcategory" style="display: none;">
+                <input type="number" id="Bamount" name="Bamount">
+                <button type="submit" class="save" id="save"> Save </button>
+                </form>
+                </div>
+            </div>
+        
+        </div>
+        
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budget Tracker</title>
+        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+          <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+        <link rel="stylesheet" href="common.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="grid" id="gridtr">
+        <h1 id="main-title">Money Manager</h1>  
+    </div>
+    
+    <nav class="navbar" id="navbar">
+        <a href="/" class=" navtabs">Records</a>
+        <a href="/analysis" class="navtabs">Analysis</a>
+        <a href="/budgets" class="navtabs">Budgets</a>
+        <a href="/register" class="acnav">Signup</a>
+        <a href="/login" class="navtabs">Login</a>
+    </nav>
+</header>
+        <!-- <link href = "registration.css" type = "text/css" rel = "stylesheet" />     -->
+        <div id="storage-table">
+        <h1>Sign Up</h1>    
+        <form name = "form1" class="form" action="/register/" method = "POST"  > 
+            <div class="grid-input">
+                <div class = "form_group">    
+                    <label>First Name:</label>    
+                    <input type = "text" name = "firstname" value = "" required/>    
+                </div>    
+                  
+                    
+                <div class = "form_group">    
+                    <label>Last Name:</label>    
+                    <input type = "text" name = "lastname" value = "" required/>    
+                </div> 
+
+
+                <div class = "form_group">    
+                    <label>Email:</label>    
+                    <input type = "text" name = "email" value = "" required />
+                </div>
+
+                <div class = "form_group">    
+                    <label>Phone No.:</label>    
+                    <input type = "text" name = "phone" value = "" required />
+                </div>
+
+
+                <div class = "form_group">    
+                    <label>Password:</label>    
+                    <input type = "password" name = "password" value = "" required/>    
+                </div>   
+
+                <div class = "form_group">    
+                    <label>Confirm Password:</label>    
+                    <input type = "password" name = "confirmP" value = "" required />
+                </div>
+            </div>
+                <!-- <input type="submit" class="save" value="Register" > -->
+                <button type="submit" class="save">Register</button>
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </div> 
+        </form>    
+    </body>    
+</html> 
